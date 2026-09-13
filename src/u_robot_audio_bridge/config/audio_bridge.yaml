@@ -1,0 +1,16 @@
+audio_bridge:
+  ros__parameters:
+    dry_run: false
+    output_enabled_on_start: false
+    speaker_id: 0
+    volume: 100
+    speech_rate: 1.0
+    loop_enabled: true
+    loop_message: "导航进行中，请让我先走，谢谢！"
+    messages: ["导航进行中，请让我先走，谢谢！"]
+    interval_sec: 8.000
+    repeat_count: 0
+    minimum_speech_guard_sec: 4.000
+    max_text_bytes: 500
+    backend_socket: "/tmp/u_robot_a2_audio.sock"
+    reply_socket: "/tmp/u_robot_audio_bridge_reply.sock"

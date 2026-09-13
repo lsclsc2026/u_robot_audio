@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>u_robot_audio_bridge</name>
+  <version>0.1.0</version>
+  <description>Safe ROS 2 adapter for Unitree A2 text-to-speech and scheduled announcements.</description>
+  <maintainer email="devnull@example.com">u_robot_move maintainers</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
