@@ -2,7 +2,7 @@
 
 ## 环境与布局
 
-目标环境为 Linux、ROS 2 Humble、C++17、CMake 3.8 以上、colcon，以及与 A2 设备匹配的 Unitree SDK2。本次发布与隔离构建针对 x86_64；源码和 SDK 另有 aarch64 库选择分支，但尚未完成该架构的完整构建或实机验证。实际构建结果见[验证记录](validation.md)，共用容器材料见 [unitree_docker](https://github.com/lsclsc2026/unitree_docker)。
+目标环境为 Linux、ROS 2 Humble、C++17、CMake 3.8 以上、colcon，以及与 A2 设备匹配的 Unitree SDK2。本次发布与隔离构建针对 x86_64；源码和 SDK 另有 aarch64 库选择分支，但尚未完成该架构的完整构建或实机验证。实际构建结果见[验证记录](validation.md)，共用容器材料见 [宇树机器人容器化开发环境](https://github.com/lsclsc2026/unitree_docker)。
 
 ROS 环境应提供 `ament_cmake`、`rclcpp`、`diagnostic_msgs`、`std_msgs`、`std_srvs`、`ament_index_python`、`launch` 和 `launch_ros`。节点还直接使用 `rcl_interfaces` 类型，通常由 `rclcpp` 的依赖链提供。发布版保留原有包声明，构建结果单独记录。
 

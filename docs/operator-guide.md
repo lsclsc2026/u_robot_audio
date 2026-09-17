@@ -98,7 +98,7 @@ ros2 param set /audio_bridge repeat_count 3
 
 ## 6. Foxglove
 
-本仓库不启动 Foxglove Bridge；可复用 [u_robot_move](https://github.com/lsclsc2026/u_robot_move) 中配置好的桥接。Publish 面板向 `/operator/audio/speak` 发布 `std_msgs/msg/String`，例如 `{ "data": "播报测试" }`；向 `/operator/audio/stop` 发布 `std_msgs/msg/Empty` 即请求停止。Parameters 面板可修改 `loop_message`、`volume`、`interval_sec`、`loop_enabled` 等运行时参数；服务调用面板可调用两个 SetBool 服务。
+本仓库不启动 Foxglove Bridge；可复用 [宇树四足机器人室内导航与多点巡逻](https://github.com/lsclsc2026/u_robot_move) 中配置好的桥接。Publish 面板向 `/operator/audio/speak` 发布 `std_msgs/msg/String`，例如 `{ "data": "播报测试" }`；向 `/operator/audio/stop` 发布 `std_msgs/msg/Empty` 即请求停止。Parameters 面板可修改 `loop_message`、`volume`、`interval_sec`、`loop_enabled` 等运行时参数；服务调用面板可调用两个 SetBool 服务。
 
 参数面板能否显示节点取决于桥接是否开放参数能力；使用 CLI 与面板发送真实命令具有相同效果。
 

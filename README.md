@@ -1,14 +1,10 @@
-# u_robot_audio
+# 宇树机器人语音播报系统
 
 **Unitree A2 Pro ROS 2 text-to-speech bridge** · 独立的文字播报与定时循环播报工作区。
 
 通过 ROS 2 话题、服务和参数控制 A2 原生 TTS，由独立 SDK 进程连接机器人。可以单次播报、设置一条循环文字、调整音量和间隔、切换机器人语音服务，并查看 SDK 返回码。源码采用 ROS 2 Humble、C++17 和 Unitree SDK2。
 
 本次为私有首版审阅整理。已实现功能依据源码确认，发布检查与实机验收分别记录在[验证记录](docs/validation.md)。没有实现语音识别、自由对话、自定义音色或可调语速；`speech_rate` 目前只支持 `1.0`。
-
-## 语音演示（待补录）
-
-**待补充：10–20 秒带声音的实机视频，展示单次播报、循环播报与停止。** 当前没有可发布的语音录音或视频，因此暂不放置播放器、封面或失效链接。收到素材后补充录制日期、设备环境和对应源码版本；命令输出不能代替实际声音验证。
 
 ## 快速开始
 
@@ -56,9 +52,9 @@ ros2 run u_robot_audio_bridge audio_bridge_node --ros-args   -p dry_run:=true -p
 
 ## 相关项目
 
-- [u_robot_move](https://github.com/lsclsc2026/u_robot_move)：建图、定位、导航与多点巡逻。
-- [u_robot_audio](https://github.com/lsclsc2026/u_robot_audio)：本语音模块。
-- [u_robot_duck_dataset](https://github.com/lsclsc2026/u_robot_duck_dataset)：鸭子数据采集与自动标注研究工具。
-- [unitree_docker](https://github.com/lsclsc2026/unitree_docker)：共享开发环境与部署入口。
+- [宇树四足机器人室内导航与多点巡逻](https://github.com/lsclsc2026/u_robot_move)：建图、定位、导航与多点巡逻。
+- [宇树机器人语音播报系统](https://github.com/lsclsc2026/u_robot_audio)：本语音模块。
+- [机器人视觉数据采集与鸭子检测工具](https://github.com/lsclsc2026/u_robot_duck_dataset)：鸭子数据采集与自动标注研究工具。
+- [宇树机器人容器化开发环境](https://github.com/lsclsc2026/unitree_docker)：共享开发环境与部署入口。
 
 这些仓库首版为私有，访问链接需要相应权限。音频工作区不依赖导航工作区启动，也不发布运动指令。

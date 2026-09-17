@@ -20,7 +20,7 @@
 | `lib/aarch64/libunitree_sdk2.a` | `a084cc0087b6dc1b6361f874aabed8bd525f0574b3b2228f91b4b512e1bf035e` |
 | `lib/x86_64/libunitree_sdk2.a` | `08402aea74150dfbfc3fbfded4ca746916a8d892b54d2bade0cbf392a3be4029` |
 
-这些值标识本次检查使用的依赖，不表示任意上游最新版本都兼容。优先保留与设备交付环境对应的完整 SDK，再核对上述版本与库文件。获取、布局和依赖准备也见 [unitree_docker](https://github.com/lsclsc2026/unitree_docker)。
+这些值标识本次检查使用的依赖，不表示任意上游最新版本都兼容。优先保留与设备交付环境对应的完整 SDK，再核对上述版本与库文件。获取、布局和依赖准备也见 [宇树机器人容器化开发环境](https://github.com/lsclsc2026/unitree_docker)。
 
 SDK 还随附 CycloneDDS、CycloneDDS C++、iceoryx 和 RapidJSON 的单独许可文本，位于其 `licenses/` 子目录；不能仅用 SDK 根许可证概括所有传递依赖。再分发包含这些依赖的二进制或镜像时，须保留并遵守对应版权和许可条件。
 
